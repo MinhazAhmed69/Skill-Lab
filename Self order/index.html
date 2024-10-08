@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Delicious Bites</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="hero-section">
+            <h2>Welcome to Our Self-Ordering System!</h2>
+            <p>Place your order easily and we'll serve it right at your table and very quick.</p>
+            <form class="order-info">
+                <input type="text" placeholder="Enter your Table Number" id="table-number">
+            </form>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="menu-list">
+            <div class="menu-item">
+                <img src="idli.jpg" alt="Dish 1">
+                <h3>IDLI</h3>
+                
+                <p>Price: ₹40</p>
+                <button onclick="addToCart('Dish 1', 10)">Add to Order</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="poori-masala-kizhangu.jpg" alt="Dish 2">
+                <h3>POORI</h3>
+                
+                <p>Price: ₹50</p>
+                <button onclick="addToCart('Dish 2', 15)">Add to Order</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="Plain-Dosa.jpg.webp"alt="Dish 3">
+                <h3>DOSA</h3>
+               
+                <p>Price: ₹60.00</p>
+                <button onclick="addToCart('Dish 3', 12)">Add to Order</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2 class="section-title">Your Order</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <p id="total-price">Total: ₹0.00</p>
+        <button onclick="submitOrder()">Place Order</button>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <h2>Who We Are</h2>
+        <p>
+            Welcome to Delicious Bites, a family-owned restaurant with a passion for providing 
+            high-quality meals to our community. We began our journey 10 years ago with the 
+            mission to create unforgettable dining experiences through our commitment to fresh, 
+            locally sourced ingredients and exceptional customer service.
+            Our vision is simple: to be the best in the business by offering a diverse menu that 
+            celebrates both classic dishes and innovative culinary creations. At Delicious Bites, 
+            we believe in making every meal a memorable one, with a focus on taste, presentation, 
+            and sustainability.   
+
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to contact us at <a href="mailto:support@restaurant.com">support@restaurant.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Delcious Bites Name | All Rights Reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

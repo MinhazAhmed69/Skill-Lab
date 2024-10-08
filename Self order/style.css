@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: tomato;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color:mediumspringgreen;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.order-info {
+    margin-top: 20px;
+}
+
+.order-info input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Menu Section */
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.menu-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 15px;
+    width: calc(33% - 60px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    margin: 15px 0;
+}
+
+.menu-item p {
+    margin: 10px 0;
+}
+
+/* Cart Section */
+#cart {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+    margin-bottom: 15px;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2rem;
+}
+
+/* Button Styles */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: mediumspringgreen;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

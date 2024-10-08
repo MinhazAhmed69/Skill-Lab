@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Delicious Bites</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="ContactUs">
+        <h1>Contact Us</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="query">Type of Query</label>
+                <select name="myQuery" id="query" required>
+                    <option value="" selected>Select</option>
+                    <option value="ord">Order related Issues</option>
+                    <option value="Site">Site related Issues</option>
+                    <option value="fed">Complaint related Issues</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="myName" id="name" placeholder="Enter your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email-Id</label>
+                <input type="email" name="myEmail" id="email" placeholder="Enter your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pho">Phone Number</label>
+                <input type="tel" name="myPhone" id="pho" placeholder="Enter your Phone Number">
+            </div>
+
+            <fieldset>
+                <legend>Are you a member of OnlineFoodShop?</legend>
+                <label for="yes">
+                    <input type="radio" name="eligible" id="yes" value="yes">
+                    Yes
+                </label>
+                <label for="no">
+                    <input type="radio" name="eligible" id="no" value="no">
+                    No
+                </label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="message">Elaborate your query</label>
+                <textarea name="mesg" id="message" cols="30" rows="10" placeholder="Describe your issue..."></textarea>
+            </div>
+
+            <div class="form-group buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif; /* Clear and readable font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improved line height for readability */
+    background-color: tomato; /* Light background for contrast */
+}
+
+header {
+    background-color: mediumspringgreen; /* Header background color */
+    color: #fff; /* Text color */
+    padding: 15px 30px; /* Padding for header */
+}
+
+.navbar {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    font-size: 2rem; /* Larger logo font */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+    margin-left: 30px; /* Space between links */
+}
+
+.nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    font-size: 1.1rem; /* Link font size */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-links a:hover {
+    color: #ffa070; /* Change link color on hover */
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px; /* Limit max width for large screens */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    background-color: white; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.menu-title {
+    text-align: center; /* Center the menu title */
+    font-size: 2.5rem; /* Larger font for title */
+    margin-bottom: 20px; /* Spacing below title */
+}
+
+.menu-section {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+.menu-section h2 {
+    font-size: 2rem; /* Section header font size */
+    border-bottom: 2px solid mediumspringgreen; /* Underline effect */
+    padding-bottom: 10px; /* Space below the header */
+    margin-bottom: 20px; /* Space above the section content */
+}
+
+.menu-section ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.menu-section li {
+    margin-bottom: 20px; /* Space between menu items */
+    background-color: white; /* Background color for menu items */
+    border-radius: 5px; /* Rounded corners for menu items */
+    padding: 15px; /* Padding for menu item */
+}
+
+.menu-section img {
+    width: 100%; /* Set image to full width of its container */
+    height: 200px; /* Fixed height for equal sizing */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        align-items: flex-start; /* Align to start */
+        width: 50%;
+    }
+
+    .nav-links li {
+        margin-left: 0; /* Remove margin on small screens */
+        margin-bottom: 10px; /* Space between links */
+    }
+
+    .menu-title {
+        font-size: 2rem; /* Smaller title font on mobile */
+    }
+
+    .menu-section h2 {
+        font-size: 1.5rem; /* Smaller section headers */
+    }
+
+    .container {
+        padding: 15px; /* Less padding on mobile */
+    }
+
+    .menu-section img {
+        height: auto; /* Allow images to resize on small screens */
+    }
+}
+button{
+    background-color: mediumspringgreen;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: tomato;
+    color: black;
+    }
+#ft{
+    background-color: mediumspringgreen;
+    text-align: center;
+     padding: 20PX;
+     text-decoration: solid;
+     position: relative;
+    bottom: 0;
+    width: 100%;
+   
+}
